@@ -8,12 +8,16 @@
     
 </head>
 <body>
-   <label for="nom">Votre nom:</label><input type="text" name="nom" id="nom"><br>
-   <label for="prenom">Votre prénom:</label><input type="text" name="prénom" id="prenom"><br>
+    <form method="post">
+   <label for="nom">Votre nom:</label><input type="text" name="nom" id="nom" required maxlenght="20"><br>
+   <span id="nom_manquant"></span>
+   <label for="prenom">Votre prénom:</label><input type="text" name="prenom" id="prenom" required maxlength="30"><br>
+   <span id="prenom_manquant"></span>
    <br>
    <input type="submit" value="envoyer"/><br>
       <input type="reset" value="annuler"/><br>
-
+    </form>
+    <form method="post">
    <input type="text" id="n1"/><br>
 
    <select id="signes">
@@ -27,6 +31,6 @@
 
    <button onclick="calcule();">=</button>
    <input type="text" id="n3"/>
-
+</form>
 </body>
 </html>
