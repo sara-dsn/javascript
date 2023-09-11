@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exerciceJS</title>
     <script src="ex.js"></script>
+    
 </head>
 <body>
    <label for="nom">Votre nom:</label><input type="text" name="nom" id="nom"><br>
    <label for="prenom">Votre prénom:</label><input type="text" name="prénom" id="prenom"><br>
+   <br>
+   <input type="submit" value="envoyer"/><br>
+      <input type="reset" value="annuler"/><br>
 
-   <input type="submit" value="envoyer"/>
-   <input type="reset" value="annuler"/><br>
-   
    <input type="text" id="n1"/><br>
+
    <select id="signes">
     <option value="addition">+</option>
     <option value="soustraction">-</option>
     <option value="division">/</option>
+    <option value="multiplication">x</option>
    </select><br>
-   <input type="text" id="n2"/><br>
-   <button onclick="calcule()">=</button>
-   <input type="text" id="n3"/>
-   
 
+   <input type="text" id="n2"/><br>
+
+   <button onclick="calcule();">=</button>
+   <input type="text" id="n3"/>
 
 </body>
 </html>
